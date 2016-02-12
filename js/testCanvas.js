@@ -11,7 +11,7 @@ function drawShape(){
 
 
 ctx.fillStyle = "blue";
-ctx.fillRect(getRandomInt(1,750),getRandomInt(1,900),150,75);
+ctx.fillRect(getRandomInt(1,750),getRandomInt(1,825),150,75);
 }
 
 drawButton.onclick = function() {drawShape();}
