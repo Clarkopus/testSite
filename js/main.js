@@ -7,6 +7,8 @@ function setUserName() {
   myHeading.innerHTML = 'Hello there, ' + myName; // Edit the existing h1 tag HTML to say the users name
 }
 
+
+//This condition statement is to initialize the functions when the page loads
 if(!localStorage.getItem('name')) { //Check to see if the data item "name exists"
   setUserName(); // If it doesn't then run the function setUserName
 } else { //Else just set the name to what ever the data item "name" is.
@@ -17,3 +19,4 @@ if(!localStorage.getItem('name')) { //Check to see if the data item "name exists
 myButton.onclick = function() { //Function to set the button 
   setUserName();
 }
+
